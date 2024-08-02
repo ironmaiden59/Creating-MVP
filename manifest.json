@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Kijiji Price Scraper",
+  "version": "1.0",
+  "description": "Extracts the name and price of an item from Kijiji listings.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png"
+      
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.kijiji.ca/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
