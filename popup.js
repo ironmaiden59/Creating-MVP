@@ -1,4 +1,4 @@
-// popup.js
+
 document.addEventListener('DOMContentLoaded', () => {
   const itemNameSpan = document.getElementById('itemName');
   const itemPriceSpan = document.getElementById('itemPrice');

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Kijiji Price Scraper",
+  "name": "Name Price Scraper",
   "version": "1.0",
   "description": "Extracts the name and price of an item from Kijiji listings.",
   "permissions": [

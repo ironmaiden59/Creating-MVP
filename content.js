@@ -1,4 +1,4 @@
-// content.js
+
 (function() {
   const getItemDetails = () => {
     const itemNameElement = document.querySelector('h1[itemprop="name"]');
