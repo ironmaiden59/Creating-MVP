@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sanitizedPrice = response.itemPrice.replace(/[^0-9.]/g, '');
         itemPriceSpan.textContent = sanitizedPrice;
 
-        nextButton.addEventListener('click', () => {
+        nextButton.onclick = () => {
           const itemData = {
             name: response.itemName,
             price: sanitizedPrice,
@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
           })
           .then(() => {
             // Redirect to BuyItem page
-            window.location.href = `http://localhost:3000/buyitem`;
+            chrome.tabs.create({ url: 'http://localhost:3000/buy-item' });
           })
           .catch((error) => {
             console.error('Error sending item data to backend:', error);
           });
-        });
+        };
       }
     });
   });
